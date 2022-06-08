@@ -138,7 +138,11 @@ namespace proyectoCS
             }
         }
 
-        private void aleatorio()
+        private void pbAlbum_Click(object sender, EventArgs e)
+        {
+
+        }
+    private void aleatorio()
         {
             trackList.Items.Clear();
             Random rand1 = new Random();
@@ -153,6 +157,7 @@ namespace proyectoCS
                 trackList.Items.Add(archivos[y]);
             }
         }
-
+        private void librarySetVlc()
+        { this.vlcControl1.VlcLibDirectory = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, "libvlc\\win-x86")); }
     }
 }

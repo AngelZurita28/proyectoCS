@@ -251,7 +251,7 @@ namespace proyectoCS
             this.lblAjustar.AutoSize = true;
             this.lblAjustar.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAjustar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAjustar.Location = new System.Drawing.Point(72, 70);
+            this.lblAjustar.Location = new System.Drawing.Point(62, 94);
             this.lblAjustar.Name = "lblAjustar";
             this.lblAjustar.Size = new System.Drawing.Size(76, 25);
             this.lblAjustar.TabIndex = 22;
@@ -317,6 +317,7 @@ namespace proyectoCS
             this.Controls.Add(this.btnNone);
             this.Controls.Add(this.lblEfectos);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditorDeImagenes";
             this.Text = "Editor de Imagen";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -58,7 +58,7 @@
             this.vlcControl1.Spu = -1;
             this.vlcControl1.TabIndex = 0;
             this.vlcControl1.Text = "vlcControl1";
-            this.vlcControl1.VlcLibDirectory = ((System.IO.DirectoryInfo)(resources.GetObject("vlcControl1.VlcLibDirectory")));
+            librarySetVlc();
             this.vlcControl1.VlcMediaplayerOptions = null;
             // 
             // btnAbrir
@@ -161,7 +161,7 @@
             this.lbTime.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbTime.Location = new System.Drawing.Point(100, 26);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(38, 16);
+            this.lbTime.Size = new System.Drawing.Size(39, 16);
             this.lbTime.TabIndex = 10;
             this.lbTime.Text = "00:00";
             // 
@@ -172,7 +172,7 @@
             this.lbTotalTime.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbTotalTime.Location = new System.Drawing.Point(502, 26);
             this.lbTotalTime.Name = "lbTotalTime";
-            this.lbTotalTime.Size = new System.Drawing.Size(38, 16);
+            this.lbTotalTime.Size = new System.Drawing.Size(39, 16);
             this.lbTotalTime.TabIndex = 11;
             this.lbTotalTime.Text = "00:00";
             // 
@@ -188,11 +188,12 @@
             // 
             // pbAlbum
             // 
-            this.pbAlbum.Location = new System.Drawing.Point(10, 12);
+            this.pbAlbum.Location = new System.Drawing.Point(9, 9);
             this.pbAlbum.Name = "pbAlbum";
             this.pbAlbum.Size = new System.Drawing.Size(75, 75);
             this.pbAlbum.TabIndex = 13;
             this.pbAlbum.TabStop = false;
+            this.pbAlbum.Click += new System.EventHandler(this.pbAlbum_Click);
             // 
             // ReproductorMusica
             // 
@@ -215,9 +216,10 @@
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.vlcControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReproductorMusica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Reproductor De Musica";
             ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlbum)).EndInit();
             this.ResumeLayout(false);

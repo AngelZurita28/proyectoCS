@@ -53,7 +53,7 @@
             this.vlcControl1.Spu = -1;
             this.vlcControl1.TabIndex = 0;
             this.vlcControl1.Text = "vlcControl1";
-            this.vlcControl1.VlcLibDirectory = ((System.IO.DirectoryInfo)(resources.GetObject("vlcControl1.VlcLibDirectory")));
+            librarySetVlc();
             this.vlcControl1.VlcMediaplayerOptions = null;
             // 
             // btnAbrir
@@ -91,7 +91,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(5, 369);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 16);
+            this.label1.Size = new System.Drawing.Size(39, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "00:00";
             // 
@@ -102,7 +102,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(748, 369);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 16);
+            this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "00:00";
             // 
@@ -143,9 +143,10 @@
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.vlcControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "reproductordevideo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Reproductor de Video";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form_closing);
             this.SizeChanged += new System.EventHandler(this.reproductorDeVideo_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).EndInit();

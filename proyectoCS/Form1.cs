@@ -15,6 +15,7 @@ namespace proyectoCS
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void imagenesPB_Click(object sender, EventArgs e)
@@ -37,8 +38,8 @@ namespace proyectoCS
 
         private void documentosPB_Click(object sender, EventArgs e)
         {
-            //Form doc = new ();
-            //.Show();
+            Form doc = new Doc();
+            doc.Show();
         }
 
         private void ordenadorPB_Click(object sender, EventArgs e)
@@ -52,5 +53,11 @@ namespace proyectoCS
             Form editor = new EditorDeImagenes();
             editor.Show();
         }
+       
+        private void pbCerrar_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit(); 
+        }
+
     }
 }

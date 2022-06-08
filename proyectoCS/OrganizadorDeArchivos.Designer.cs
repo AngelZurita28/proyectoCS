@@ -102,7 +102,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Organizar (mover)";
+            this.label1.Text = "Organizar (copiar)";
             // 
             // label2
             // 
@@ -113,7 +113,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Organizar (copiar)";
+            this.label2.Text = "Organizar (mover)";
             // 
             // Organizador
             // 

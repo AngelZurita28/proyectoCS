@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace proyectoCS
 {
@@ -133,5 +134,7 @@ namespace proyectoCS
         }
         private void form_closing(object sender, FormClosingEventArgs eventArgs)
         { }
+        private void librarySetVlc()
+        { this.vlcControl1.VlcLibDirectory = new DirectoryInfo(Path.Combine(Environment.CurrentDirectory, "libvlc\\win-x86")); }
     }
 }

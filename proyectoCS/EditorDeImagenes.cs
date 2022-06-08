@@ -14,7 +14,6 @@ namespace proyectoCS
 {
     public partial class EditorDeImagenes : Form
     {
-
         public EditorDeImagenes()
         {
             InitializeComponent();
@@ -430,10 +429,10 @@ namespace proyectoCS
                 ColorMatrix cmPicture = new ColorMatrix(new float[][]
                 {
                     new float[]{1+0.3f, 0, 0, 0, 0},
-            new float[]{0, 1+0.7f, 0, 0, 0},
-            new float[]{0, 0, 1+1.3f, 0, 0},
-            new float[]{0, 0, 0, 1, 0},
-            new float[]{0, 0, 0, 0, 1}
+                new float[]{0, 1+0.7f, 0, 0, 0},
+                new float[]{0, 0, 1+1.3f, 0, 0},
+                new float[]{0, 0, 0, 1, 0},
+                new float[]{0, 0, 0, 0, 1}
                 });
                 ia.SetColorMatrix(cmPicture);
                 Graphics g = Graphics.FromImage(bmpInverted);
@@ -557,17 +556,10 @@ namespace proyectoCS
             hue();
         }
         private void trackBar3_Scroll(object sender, EventArgs e)
-        {
-            hue();
-        }
+        { hue(); }
         private void pbAbrir_Click(object sender, EventArgs e)
-        {
-            openImage();
-        }
+        { openImage();}
         private void pbGuardar_Click(object sender, EventArgs e)
-        {
-            saveImage();
-        }
+        { saveImage(); }
     }
-
 }
